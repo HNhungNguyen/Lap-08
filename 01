@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+	int a, b, temp, *p;
+	printf("Nhap so a va b: ");
+	scanf("%d%d", &a, &b);
+	temp = b;
+	p = &a;
+	b = *p;
+	a = temp;	
+	printf("Hoan doi vi tri: %d %d", a, b);
+	return 0;
+}
